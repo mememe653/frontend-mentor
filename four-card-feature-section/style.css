@@ -1,0 +1,145 @@
+:root {
+  /* Primary colours */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral colours */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 200;
+  background-color: var(--very-light-gray);
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+}
+
+h1 {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+strong {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  display: block;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+.cards {
+  margin-top: 3rem;
+}
+
+section {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  min-height: 10rem;
+  box-shadow: 0px 10px 20px var(--grayish-blue);
+  border-radius: 0.5rem;
+  text-align: start;
+}
+
+h2 {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  margin: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+.supervisor::after {
+  content: url("images/icon-supervisor.svg");
+}
+
+.supervisor {
+  border-top: 3px var(--cyan) solid;
+}
+
+.team-builder::after {
+  content: url("images/icon-team-builder.svg");
+}
+
+.team-builder {
+  border-top: 3px var(--red) solid;
+}
+
+.karma::after {
+  content: url("images/icon-karma.svg");
+}
+
+.karma {
+  border-top: 3px var(--orange) solid;
+}
+
+.calculator::after {
+  content: url("images/icon-calculator.svg");
+}
+
+.calculator {
+  border-top: 3px var(--blue) solid;
+}
+
+*::after {
+  float: right;
+}
+
+@media (min-width: 800px) {
+  main {
+    align-items: center;
+  }
+
+  main > p {
+    max-width: 500px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    max-width: 1100px;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .supervisor {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+  }
+
+  .team-builder {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+  }
+
+  .karma {
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 1;
+  }
+
+  .calculator {
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 1;
+  }
+}
