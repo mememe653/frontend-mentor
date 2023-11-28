@@ -1,0 +1,157 @@
+:root {
+  /* Primary colours */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral colours */
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 600;
+  font-size: 13px;
+  background-color: var(--light-grayish-blue);
+}
+
+blockquote {
+  color: var(--light-gray);
+  box-shadow: 3px 9px 22px -3px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  padding: 2em;
+  margin: 1em;
+}
+
+header {
+  margin-bottom: -30px;
+}
+
+img {
+  position: relative;
+  top: -14px;
+  left: -14px;
+  border-radius: 50%;
+  scale: 50%;
+}
+
+header div {
+  display: inline-block;
+  position: relative;
+  top: -28px;
+  left: -14px;
+}
+
+header span {
+  opacity: 50%;
+}
+
+cite {
+  display: block;
+  font-style: normal;
+}
+
+blockquote p {
+  color: var(--white);
+  font-size: 1.3em;
+}
+
+blockquote > div {
+  opacity: 70%;
+}
+
+.daniel::before {
+  content: url("images/bg-pattern-quotation.svg");
+  position: absolute;
+  top: 0px;
+  right: 2em;
+}
+
+.daniel {
+  position: relative;
+  background-color: var(--moderate-violet);
+}
+
+.daniel p {
+  position: relative;
+}
+
+.jonathan {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.jeanette {
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
+}
+
+.jeanette p {
+  color: var(--very-dark-blackish-blue);
+}
+
+.patrick {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.kira {
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--white);
+}
+
+.kira p {
+  color: var(--very-dark-blackish-blue);
+}
+
+@media (min-width: 750px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+    max-width: 1000px;
+  }
+
+  blockquote {
+    margin: 0;
+  }
+
+  .daniel::before {
+    right: 5em;
+  }
+
+  .daniel {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .jonathan {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .jeanette {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .patrick {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+  }
+
+  .kira {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+  }
+}
