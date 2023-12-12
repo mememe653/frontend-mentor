@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+  <header>
+    <h1><div>Rock</div><div>Paper</div><div>Scissors</div></h1>
+    <div class="score-box">
+      <label>Score</label>
+      <div class="score">0</div>
+    </div>
+  </header>
+  <div class="rock-paper-scissors">
+    <span class="paper-scissors decoration"></span>
+    <span class="paper-rock decoration"></span>
+    <span class="scissors-rock decoration"></span>
+    <div class="paper">
+      <div>
+        <img src="images/icon-paper.svg">
+      </div>
+    </div>
+    <div class="scissors">
+      <div>
+        <img src="images/icon-scissors.svg">
+      </div>
+    </div>
+    <div class="rock">
+      <div>
+        <img src="images/icon-rock.svg">
+      </div>
+    </div>
+  </div>
+  <div class="results hidden">
+    <div class="you-picked">
+      <!--
+      <div class="rock">
+        <div>
+          <img src="images/icon-rock.svg">
+        </div>
+      </div>
+      -->
+      <label>You picked</label>
+    </div>
+    <!--
+    <div class="selection-placeholder">
+      <div></div>
+    </div>
+    -->
+    <div class="house-picked">
+      <!--
+      <div class="scissors">
+        <div>
+          <img src="images/icon-scissors.svg">
+        </div>
+      </div>
+      -->
+      <div class="selection-placeholder">
+        <div></div>
+      </div>
+      <label>The house picked</label>
+    </div>
+    <div class="new-game hidden">
+      <div class="win-lose-message"></div>
+      <button>Play again</button>
+    </div>
+  </div>
+  <button class="rules-button">Rules</button>
+  </main>
+  <div class="rules hidden">
+    <h1>Rules</h1>
+    <img src="images/image-rules.svg">
+    <img class="close-rules" src="images/icon-close.svg">
+  </div>
+
+  <!--
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">mememe653</a>.
+    </div>
+  -->
+</body>
+</html>
