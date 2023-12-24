@@ -1,0 +1,128 @@
+:root {
+  /* Primary colours */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral colours */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: "Overpass";
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--light-grey);
+}
+
+main {
+  width: 350px;
+  margin: 0 auto;
+  padding: 2em;
+  background-image: linear-gradient(var(--dark-blue), var(--very-dark-blue));
+  border-radius: 1rem;
+}
+
+.icon-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+
+h1,
+strong {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 28px;
+}
+/*
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+li button {
+  text-align: center;
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  border-radius: 50%;
+}
+*/
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + span {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+label span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  border-radius: 50%;
+}
+
+label span:hover {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+input[type="submit"] {
+  color: var(--white);
+  background-color: var(--orange);
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+input[type="submit"]:active {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  display: block;
+  margin: auto;
+}
+
+.thank-you p:nth-of-type(1) {
+  display: inline-block;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  padding: 0.5em 1em;
+  border-radius: 2em;
+}
+
+strong {
+  display: block;
+}
