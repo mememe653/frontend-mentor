@@ -92,5 +92,5 @@ function replay() {
 
 function toggleShowRules() {
   rules.classList.toggle("hidden");
-  document.querySelector("main").classList.toggle("hidden");
+  //document.querySelector("main").classList.toggle("hidden");
 }
