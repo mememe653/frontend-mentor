@@ -1,0 +1,18 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.summary-container {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.todo-list {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}

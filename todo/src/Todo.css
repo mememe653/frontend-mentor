@@ -1,0 +1,38 @@
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid;
+  padding: 1.5rem;
+}
+
+span {
+  flex-grow: 1;
+}
+
+button {
+  border: none;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toggle-complete {
+  border: 1px solid red;
+  border-radius: 1.5rem;
+}
+
+button.completed {
+  background-image: url("./assets/icon-check.svg"), var(--check-background);
+  border: none;
+}
+
+span.completed {
+  text-decoration: line-through;
+}
+
+.delete {
+  background-image: url("./assets/icon-cross.svg");
+  background-color: transparent;
+}

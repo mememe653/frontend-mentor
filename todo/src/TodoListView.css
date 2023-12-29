@@ -1,0 +1,11 @@
+.toggle-view-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.selected {
+  color: var(--bright-blue);
+}
